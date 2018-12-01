@@ -1,7 +1,6 @@
 package ina.devera.com.devera_practicalexam2;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,10 +11,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText exam1;
     private EditText exam2;
     private TextView Ave;
-
-
-//    SharedPreferences prefs = this.getSharedPreferences(
-//            "com.devera.ina", Context.MODE_PRIVATE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
         bundle.putString("stuff", getrec);
 
         i.putExtras(bundle);
-
-        startActivity(i);
 
     }
 
