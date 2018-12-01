@@ -11,11 +11,11 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private EditText exam1;
     private EditText exam2;
-    private TextView ave;
+    private TextView Ave;
 
 
-    SharedPreferences prefs = this.getSharedPreferences(
-            "com.devera.ina", Context.MODE_PRIVATE);
+//    SharedPreferences prefs = this.getSharedPreferences(
+//            "com.devera.ina", Context.MODE_PRIVATE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         exam1 = (EditText) findViewById(R.id.exam1);
         exam2 = (EditText) findViewById(R.id.exam2);
-        ave = (TextView) findViewById(R.id.ave);
+        Ave = (TextView) findViewById(R.id.Ave);
     }
 
     public void calculateave (View v) {
@@ -59,5 +59,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
+
+
 
 }
